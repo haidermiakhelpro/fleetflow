@@ -92,7 +92,7 @@ export default function Dashboard({ deliveries }: Props) {
     const addressRef = useRef<HTMLTextAreaElement>(null);
     const [notice, setNotice] = useState('');
     const [search, setSearch] = useState('');
-    const [paused, setPaused] = useState();
+   const [paused, setPaused] = useState<boolean>(false);
     const [filter, setFilter] = useState('all');
     const completed = deliveries.filter((item) => item.status === 'delivered').length;
     const query = search.trim().toLowerCase();
