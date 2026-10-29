@@ -37,3 +37,7 @@ Thumbs.db
 /backups/
 *.sql
 .DS_Store
+
+/test-results/
+
+/coverage/
